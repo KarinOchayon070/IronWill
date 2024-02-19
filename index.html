@@ -1,11 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>IronWill - אימוני כושר, הרצאות ומוטיבציה</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Moirai+One&family=Open+Sans:wght@300&display=swap"
+			rel="stylesheet"
+		/>
+		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+		<script src="https://kit.fontawesome.com/ff1501f9a6.js" crossorigin="anonymous"></script>
+		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+
+        <!-- nav bar -->
+		<nav>
+			<div class="logoContainer">
+				<img src="assets/test3.png" alt="logo" class="logo" href="#home" />
+				<a href="#home" class="ironWill"><b>I</b>ron<b>Will</b></a>
+			</div>
+			<ul id="sideMenu">
+				<li class="navBarItem"><a href="#home">דף הבית</a></li>
+				<li class="navBarItem"><a href="#about">אודות</a></li>
+				<li class="navBarItem"><a href="#services">השירותים שלנו</a></li>
+				<li class="navBarItem"><a href="#skills">תמונות</a></li>
+				<li class="navBarItem"><a href="#contact">צרו קשר</a></li>
+				<i class="fa-solid fa-xmark" onclick="closeMenue()"></i>
+			</ul>
+			<i class="fa-solid fa-bars" onclick="openMenue()"></i>
+		</nav>
+
+
+        <!--Home section-->
+		<div id="home">
+			<div class="container homeContainer">
+                <img
+					src="./assets/yaron.png"
+					alt="yaron"
+					class="yaronImage"
+				/>
+				<div class="homeText">
+					<h1 class="name">ברוכים הבאים</h1>
+					<div class="changeText">
+                        <h3>הגעתם לעולם שלם של</h3>
+						<h3>
+							<span class="word">אימונים</span>
+							<span class="word">הרצאות&nbsp;בנושא&nbsp;צבא</span>
+							<span class="word">פיתוח&nbsp;אישי</span>
+                            <span class="word"> מוטיבציה</span>
+
+						</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="app.js"></script>
+	</body>
 </html>

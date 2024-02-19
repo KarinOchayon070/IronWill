@@ -1,0 +1,210 @@
+/* ======================================== General ======================================== */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	color: white;
+	background-color: black;
+	font-family: "Open Sans", sans-serif;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	position: sticky;
+	top: 0;
+	background: linear-gradient(135deg, #00adb5, #4b0082);
+	color: white;
+	padding: 25px;
+	z-index: 999;
+	/* width: 100%; */
+}
+
+.logoContainer {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	gap: 10px;
+}
+
+.logo {
+	height: 70px;
+	width: 70px;
+}
+
+.ironWill {
+	color: inherit;
+	text-decoration: none;
+	font-family: sans-serif;
+	font-size: 45px;
+	letter-spacing: 5px;
+}
+
+nav ul li {
+	display: inline-block;
+	list-style: none;
+	margin: 10px 20px;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+	font-size: 30px;
+	position: relative;
+}
+
+nav ul li a::after {
+	content: "";
+	width: 0;
+	height: 3px;
+	background: #00adb5;
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+	width: 100%;
+}
+
+/* .container {
+	padding: 10px 10%;
+} */
+
+nav .fa-solid {
+	display: none;
+}
+
+/* ======================================== Home ======================================== */
+
+#home {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.homeContainer {
+	display: flex;
+	align-items: center;
+	/* max-width: 2400px; */
+}
+
+.homeText {
+	white-space: nowrap;
+	direction: rtl;
+}
+
+.name {
+	display: inline-block;
+}
+
+.homeText h1 {
+	font-size: 150px;
+	display: inline;
+}
+
+.homeText h1 span {
+	color: #00adb5;
+}
+
+.changeText {
+	font-size: 50px;
+}
+
+.changeText h3 {
+	display: inline-flex;
+	margin: 0;
+	vertical-align: top;
+}
+
+.changeText h3 .word {
+	position: absolute;
+	display: flex;
+	opacity: 0;
+	color: #00adb5;
+}
+
+.changeText h3 .word .letter {
+	transform-origin: center center 22px;
+}
+
+.changeText h3 .word .letter {
+	transform-origin: center center 22px;
+}
+
+.changeText h3 .word .letter.out {
+	transform: rotateX(90deg);
+	transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
+}
+
+.changeText h3 .word .letter.in {
+	transition: 0.38s ease;
+}
+
+.changeText h3 .word .letter.behind {
+	transform: rotateX(-90deg);
+}
+
+.yaronImage {
+	height: 90vh;
+	/* width: 80vw; */
+}
+
+/* ======================================== Small Screens ======================================== */
+
+@media only screen and (max-width: 1200px) {
+	nav {
+		z-index: 9999;
+	}
+
+	nav ul {
+		background: #00adb5;
+		position: fixed;
+		top: 0;
+		right: -200px;
+		width: 200px;
+		min-height: 100vh;
+		padding-top: 50px;
+		z-index: 9999;
+		transition: right 0.5s;
+	}
+
+	nav ul li {
+		display: block;
+		margin: 25px;
+	}
+
+	nav ul .fa-solid {
+		position: absolute;
+		top: 25px;
+		left: 25px;
+		cursor: pointer;
+		z-index: 9999;
+	}
+
+	nav .fa-solid {
+		display: block;
+		font-size: 25px;
+	}
+}
+
+/* ======================================== Very Small Screens ======================================== */
+
+@media only screen and (max-width: 600px) {
+	nav ul li a {
+		font-size: 18px;
+	}
+}
