@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+	 <!---------------------------------------------------- Head ---------------------------------------------------->
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>IronWill - אימוני כושר, הרצאות ומוטיבציה</title>
+		<title>IronWill - אימוני כושר | הרצאות בנושא צבא וביטחון | פיתוח אישי</title>
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
@@ -12,41 +13,37 @@
 		/>
 		<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 		<script src="https://kit.fontawesome.com/ff1501f9a6.js" crossorigin="anonymous"></script>
-		<link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-
+		<link rel="icon" href="assets/logo-images/logo.ico" type="image/x-icon" />
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="styles.css" />
 	</head>
 	<body>
-
-        <!-- nav bar -->
+        <!---------------------------------------------------- Nav bar ---------------------------------------------------->
 		<nav>
-			<div class="logoContainer">
-				<img src="assets/test3.png" alt="logo" class="logo" href="#home" />
-				<a href="#home" class="ironWill"><b>I</b>ron<b>Will</b></a>
+			<div class="logo-container">
+				<img src="assets/logo-images/logo.png" alt="IronWill logo" class="IronWill-logo" href="#home" />
+				<a href="#home" class="IronWill-text"><b>I</b>ron<b>Will</b></a>
 			</div>
 			<ul id="sideMenu">
-				<li class="navBarItem"><a href="#home">דף הבית</a></li>
-				<li class="navBarItem"><a href="#about">אודות</a></li>
-				<li class="navBarItem"><a href="#services">השירותים שלנו</a></li>
-				<li class="navBarItem"><a href="#skills">תמונות</a></li>
 				<li class="navBarItem"><a href="#contact">צרו קשר</a></li>
+				<li class="navBarItem"><a href="#services">שירותים</a></li>
+				<li class="navBarItem"><a href="#about">אודות</a></li>
+				<li class="navBarItem"><a href="#home">דף הבית</a></li>
 				<i class="fa-solid fa-xmark" onclick="closeMenue()"></i>
 			</ul>
 			<i class="fa-solid fa-bars" onclick="openMenue()"></i>
 		</nav>
-
-
-        <!--Home section-->
+        <!---------------------------------------------------- Home ---------------------------------------------------->
 		<div id="home">
-			<div class="container homeContainer">
+			<div class="container home-container">
                 <img
 					src="./assets/yaron.png"
-					alt="yaron"
-					class="yaronImage"
+					alt="Yaron Image"
+					class="Yaron-image"
 				/>
-				<div class="homeText">
-					<h1 class="name">ברוכים הבאים</h1>
-					<div class="changeText">
+				<div class="home-text-container">
+					<h1 class="home-main-title">ברוכים הבאים</h1>
+					<div class="home-change-text-title">
                         <h3>הגעתם לעולם שלם של</h3>
 						<h3>
 							<span class="word">אימונים</span>
@@ -59,7 +56,143 @@
 				</div>
 			</div>
 		</div>
-
+        <!---------------------------------------------------- About ---------------------------------------------------->
+		<div id="about">
+			<div class="container about-container">
+					<h1 class="section-title">נעים להכיר</h1>
+					<div class="decoration-container">
+						<span class="line"></span>
+						<span class="dot"></span>
+						<span class="line"></span>
+					</div>
+					<p class="about-description">שמי ירון אוחיון, ואני מאמן כושר, מאמן להתפתחות אישית ומרצה לענייני צבא וביטחון.<br>
+						חשבת פעם להפוך את התשוקה שלך למקצוע? זה בדיוק מה שבחרתי לעשות. תמיד הייתה לי זיקה עמוקה לתחומי הכושר, הצבא והביטחון, כמו גם להתפתחות אישית.<br> התשוקה הזו הובילה אותי להתחרות בתחרות העולמית של 'Iron Man', לקבל תעודת מדריך ריצה, לשרת כקצין בצה״ל כ-6 שנים (והריגוש מהשירות עדיין מהדהד בי), ולעסוק בלימודי פסיכולוגיה, NLP ועסקים.<br> 	
+						אני מאמין בתוקף שכאשר אנו עוסקים בפעילויות שאנו נלהבים מהן, זה מהדהד בתוכנו. לכן אני מזמין אתכם להתעמק בעולם האימון, ההתפתחות האישית וההרצאות המרתקות. הצטרפו אליי למסע הזה של צמיחה וגילוי.
+					</p>
+					<a class="IronWill-text">I can, I will, <b>I</b>ron<b>Will</b></a>
+					<div class="carousel-wrapper">
+					<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="assets/yaron-images/acharai.jpeg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="assets/yaron-images/army.jpeg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="assets/yaron-images/army2.jpeg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="assets/yaron-images/army3.jpeg" class="d-block w-100" alt="...">
+							</div>
+							<div class="carousel-item">
+								<img src="assets/yaron-images/calcalist.jpeg" class="d-block w-100" alt="...">
+							</div>
+						</div>
+						<ol class="carousel-indicators">
+							<li data-target="#carouselExampleSlidesOnly" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleSlidesOnly" data-slide-to="1"></li>
+							<li data-target="#carouselExampleSlidesOnly" data-slide-to="2"></li>
+							<li data-target="#carouselExampleSlidesOnly" data-slide-to="3"></li>
+							<li data-target="#carouselExampleSlidesOnly" data-slide-to="4"></li>
+						</ol>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+        <!---------------------------------------------------- Services ---------------------------------------------------->
+		<div id="services">
+			<div class="container services-container">
+				<h1 class="section-title">השירותים שאני מציע</h1>
+				<div class="decoration-container">
+					<span class="line"></span>
+					<span class="dot"></span>
+					<span class="line"></span>
+				</div>
+				<div class="services-list">
+					<div class="service-item">
+						<i class="fa-solid fa-person-running"></i>
+						<h2>אימוני כושר אישיים/קבוצתיים</h2>
+						<p>
+							אני מציע גם אימונים אישיים וגם שיעורי כושר קבוצתיים דינמיים המותאמים לצרכים ולמטרות האישיות שלך. <br>
+עם ניסיון של שנים בענף הכושר, כולל השלמת תחרות ה-"Iron Man" העולמית המפרכת, השגת הסמכה כמאמן ריצה, ולמידת היבטים שונים של התפתחות אישית ופסיכולוגיה, אני מביא שפע של מומחיות לכל מפגש.<br> בין אם את/ה מחפש/ת להשיג אבני דרך ספציפיות בכושר, לשפר את הבריאות והרווחה הכללית שלך, או פשוט ליהנות מהאחווה של אימונים קבוצתיים, תהיו בטוחים שתקבלו הכוונה ותמיכה מקצועית בכל שלב. <br>הצטרפו אליי וצאו למסע אל עבר אתכם בריאים, חזקים ותוססים יותר.
+						</p>
+					</div>
+					<div class="service-item">
+						<i class="fa-solid fa-user-tie"></i>
+						<h2>הרצאות בנושא צבא וביטחון</h2>
+						<p>
+							אני מציע הרצאות מרתקות ואינפורמטיביות בנושאי צבא וביטחון.<br> עם שנים של ניסיון ממקור ראשון בשירות כקצין בצבא, בו מילאתי תפקידי מנהיגות שונים לרבות מפקד מחלקה ופלוגה, אני מביא נקודת מבט ותובנה ייחודית למורכבות ההגנה והביטחון.<b> מעבר לרקע הצבאי שלי, עסקתי עמוקות גם בחינוך הבלתי פורמלי, בניהול מרכז נוער לצעירים, שימשתי כסגן של מכינה קדם צבאית וכן ניהלתי צוותים ב״אחריי״ - עמותת הכנה לצבא. חוויות אלו חידדו את היכולת שלי לתקשר ביעילות ולרתום קהלים מכל הרקעים. <br>בין אם אתם מחפשים לקבל הבנה מעמיקה יותר של אסטרטגיה צבאית, עקרונות מנהיגות או אתגרי ביטחון, ההרצאות שלי מספקות תובנות חשובות שהן גם חינוכיות וגם מעוררות מחשבה.
+						</p>
+					</div>
+					<div class="service-item">
+						<i class="fa-solid fa-heart-circle-check"></i>
+						<h2>פיתוח אישי</h2>
+						<p>
+							אני מאמין שבריאות אמיתית כוללת לא רק כושר גופני אלא גם צמיחה והתפתחות אישית. <br> מתוך הרקע שלי בפסיכולוגיה (בוגר תואר) וההסמכה ב-NLP, אני מציע מפגשים אישיים מותאמים אישית המתמקדים בהתפתחות אישית. <br>
+עם שנים של ניסיון בהתעמקות בנבכי ההתנהגות האנושית והלך הרוח, אני מספק הדרכה מותאמת כדי לעזור לך להתקדם בחיים ולעבוד לקראת המטרות שלך. <br> בין אם את/ה מחפש להתגבר על מכשולים , לשפר את המודעות העצמית שלך, או לטפח מיומנויות והרגלים חדשים, מפגשי הפיתוח האישיים שלנו נועדו להעצים אותך במסע שלך לקראת הגשמה והצלחה גדולים יותר.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+        <!---------------------------------------------------- Contact ---------------------------------------------------->
+		<div id="contact">
+				<div class="container contact-container">
+					<canvas id="confetti-canvas"></canvas>
+							<h1 class="section-title">צרו קשר</h1>
+							<div class="decoration-container">
+								<span class="line"></span>
+								<span class="dot"></span>
+								<span class="line"></span>
+							</div>
+							<div class="form">
+								<form name="submit-to-google-sheet">
+									<input autocomplete="off" type="text" name="Name" placeholder="השם שלך" required />
+									<input autocomplete="off" type="tel" name="Phone" placeholder="הטלפון שלך" inputmode="numeric" pattern="[0-9]+" required />
+									<input autocomplete="off" type="email" name="Email" placeholder="האימייל שלך" required />
+									<textarea name="Message" rows="6" placeholder="ההודעה שלך"></textarea>
+									<button id="submit-button" type="submit" class="button form-button">שלח</button>
+								</form>
+								<span id="msg"></span>
+							
+							</div>
+							<div class="email-phone-container">
+								<div class="contact-yaron-email">
+									<a href="mailto:contactironwillteam@gmail.com">contactironwillteam@gmail.com</a>
+									<a href="mailto:contactironwillteam@gmail.com">
+										<i class="fa-solid fa-envelope"></i>
+									</a>
+								</div>
+								<div class="contact-yaron-phone">
+									<a href="tel:052-444-7510">052-444-7510</a>
+									<a href="tel:052-444-7510">
+										<i class="fa-solid fa-phone"></i>
+									</a>
+								</div>
+							</div>
+							<div class="social-icons">
+								<a href="https://www.instagram.com/yaron_ironman/"><i class="fa-brands fa-square-instagram"></i></a>
+								<a href="https://www.youtube.com/channel/UCkIGR5Y5nozPO_9cje982dw"
+									><i class="fa-brands fa-youtube"></i
+								></a>
+								<a
+									href="https://www.linkedin.com/in/yaron-ochayon-313963291/"
+									><i class="fa-brands fa-linkedin"></i
+								></a>
+							</div>
+						</div>
+				</div>
+			</div>
+        <!---------------------------------------------------- Footer ---------------------------------------------------->
+		<footer>
+				<p>Ⓒ IronWill, <span id="currentYear"></span></p>
+		</footer>
+		 <!---------------------------------------------------- Scripts ---------------------------------------------------->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 		<script src="app.js"></script>
 	</body>
 </html>

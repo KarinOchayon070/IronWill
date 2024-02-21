@@ -1,4 +1,4 @@
-/* ======================================== General ======================================== */
+/* ---------------------------------------------------- General ---------------------------------------------------- */
 
 * {
 	margin: 0;
@@ -7,14 +7,47 @@
 }
 
 body {
-	color: white;
-	background-color: black;
+	color: black;
+	background-color: white;
 	font-family: "Open Sans", sans-serif;
 }
 
 html {
 	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
+
+/* ---------------------------------------------------- Shared ---------------------------------------------------- */
+
+.section-title {
+	direction: rtl;
+	font-size: 60px;
+	text-align: center;
+}
+
+.decoration-container {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.line {
+	width: 20vw;
+	height: 1px;
+	background-color: black;
+}
+
+.dot {
+	width: 30px;
+	height: 30px;
+	background-color: #00adb5;
+	border-radius: 50%;
+}
+
+a {
+	text-decoration: none;
+}
+/* ---------------------------------------------------- Nav bar ---------------------------------------------------- */
 
 nav {
 	display: flex;
@@ -25,29 +58,39 @@ nav {
 	top: 0;
 	background: linear-gradient(135deg, #00adb5, #4b0082);
 	color: white;
-	padding: 25px;
+	padding: 10px 40px 10px 40px;
 	z-index: 999;
-	/* width: 100%; */
+	width: 100vw;
 }
 
-.logoContainer {
+a:hover {
+	color: inherit;
+	text-decoration: none;
+}
+
+.logo-container {
 	display: flex;
 	align-items: center;
 	cursor: pointer;
 	gap: 10px;
 }
 
-.logo {
-	height: 70px;
-	width: 70px;
+.IronWill-logo {
+	height: 50px;
+	width: 50px;
 }
 
-.ironWill {
+.IronWill-text {
 	color: inherit;
 	text-decoration: none;
 	font-family: sans-serif;
-	font-size: 45px;
+	font-size: 35px;
 	letter-spacing: 5px;
+}
+
+.IronWill-text:hover {
+	color: inherit;
+	text-decoration: none;
 }
 
 nav ul li {
@@ -59,7 +102,7 @@ nav ul li {
 nav ul li a {
 	color: white;
 	text-decoration: none;
-	font-size: 30px;
+	font-size: 20px;
 	position: relative;
 }
 
@@ -78,10 +121,6 @@ nav ul li a:hover::after {
 	width: 100%;
 }
 
-/* .container {
-	padding: 10px 10%;
-} */
-
 nav .fa-solid {
 	display: none;
 }
@@ -94,73 +133,312 @@ nav .fa-solid {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	background-color: grey;
 }
 
-.homeContainer {
+.home-container {
 	display: flex;
 	align-items: center;
-	/* max-width: 2400px; */
+	padding: 20px;
 }
 
-.homeText {
+.home-text-container {
 	white-space: nowrap;
 	direction: rtl;
 }
 
-.name {
+.home-main-title {
 	display: inline-block;
 }
 
-.homeText h1 {
-	font-size: 150px;
+.home-text-container h1 {
+	font-size: 80px;
 	display: inline;
 }
 
-.homeText h1 span {
+.home-text-container h1 span {
 	color: #00adb5;
 }
 
-.changeText {
-	font-size: 50px;
+.home-change-text-title {
+	font-size: 40px;
 }
 
-.changeText h3 {
+.home-change-text-title h3 {
 	display: inline-flex;
 	margin: 0;
 	vertical-align: top;
 }
 
-.changeText h3 .word {
+.home-change-text-title h3 .word {
 	position: absolute;
 	display: flex;
 	opacity: 0;
 	color: #00adb5;
 }
 
-.changeText h3 .word .letter {
+.home-change-text-title h3 .word .letter {
 	transform-origin: center center 22px;
 }
 
-.changeText h3 .word .letter {
+.home-change-text-title h3 .word .letter {
 	transform-origin: center center 22px;
 }
 
-.changeText h3 .word .letter.out {
+.home-change-text-title h3 .word .letter.out {
 	transform: rotateX(90deg);
 	transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
 }
 
-.changeText h3 .word .letter.in {
+.home-change-text-title h3 .word .letter.in {
 	transition: 0.38s ease;
 }
 
-.changeText h3 .word .letter.behind {
+.home-change-text-title h3 .word .letter.behind {
 	transform: rotateX(-90deg);
 }
 
-.yaronImage {
-	height: 90vh;
+.Yaron-image {
+	height: 70vh;
 	/* width: 80vw; */
+}
+/* ======================================== About ======================================== */
+
+#about {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+	text-align: center;
+}
+
+.about-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.about-description {
+	direction: rtl;
+	max-width: 50vw;
+	font-size: 20px;
+}
+
+.carousel-wrapper {
+	width: 100%;
+	max-width: 800px;
+	height: 700px;
+	overflow: hidden;
+}
+
+.carousel-inner img {
+	width: 100%;
+	height: 700px;
+	object-fit: cover;
+}
+
+/* ======================================== Services ======================================== */
+
+#services {
+	padding-top: 50px;
+}
+
+.services-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.services-title {
+	direction: rtl;
+	font-size: 60px;
+}
+
+.services-list {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 40px;
+	margin-top: 50px;
+	direction: rtl;
+}
+
+.service-item {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	direction: rtl;
+	text-align: start;
+	height: 580px;
+}
+
+.services-list div {
+	background: #00adb5;
+	padding: 40px;
+	font-size: 14px;
+	font-weight: 300;
+	border-radius: 10px;
+	transition: 0.35s ease-in-out;
+}
+
+.services-list div i {
+	font-size: 50px;
+	margin-bottom: 30px;
+}
+
+.services-list div h2 {
+	font-size: 25px;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+
+.services-list div:hover {
+	background: #44dfe8;
+	transform: translateY(-10px);
+}
+
+/* ======================================== Contact ======================================== */
+
+#contact {
+	padding-top: 50px;
+}
+
+.contact-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	direction: rtl;
+	color: black;
+	position: relative;
+}
+
+#confetti-canvas {
+	position: absolute;
+	top: 10%;
+	width: 60%;
+	z-index: -1;
+}
+
+.contact-title {
+	direction: rtl;
+	font-size: 60px;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.contact-yaron-email,
+.contact-yaron-phone {
+	margin-top: 30px;
+	font-size: 18px;
+}
+
+.contact-yaron-email a,
+.contact-yaron-phone a {
+	text-decoration: none;
+	color: black;
+	font-size: 22px;
+}
+
+.contact-yaron-email i,
+.contact-yaron-phone i {
+	color: #00adb5;
+	margin-right: 15px;
+}
+
+.contact-yaron-email i:hover, .contact-yaron-phone i:hover{
+	transform: translateY(-5px);
+	transition: transform 0.5s;
+}
+
+.social-icons {
+	margin-top: 30px;
+}
+
+.social-icons a {
+	text-decoration: none;
+	font-size: 90px;
+	margin-right: 15px;
+	color: #00adb5;
+	display: inline-block;
+	transition: transform 0.5s;
+}
+
+.social-icons a:hover {
+	color: #44dfe8;
+	transform: translateY(-5px);
+}
+
+.form-button {
+	margin: 50px auto;
+	width: fit-content;
+	border: none;
+	padding: 14px 50px;
+	border-radius: 6px;
+	display: inline-block;
+	background: #00adb5;
+	color: white;
+	transition: transform 0.5s;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.form-button:hover,
+.form-button:focus,
+.form-button:focus-visible {
+	background-color: #44dfe8;
+	transition: transform 0.5s;
+	transform: translateY(-5px);
+	border: none;
+}
+
+form input,
+form textarea {
+	width: 100%;
+	border: 0;
+	outline: none;
+	background: #00adb5;
+	padding: 15px;
+	margin: 15px 0;
+	font-size: 18px;
+	border-radius: 6px;
+	color: white;
+	font-size: 18px;
+	direction: rtl;
+}
+
+::placeholder {
+	color: white;
+	opacity: 0.4;
+}
+
+.form-button {
+	padding: 14px 60px;
+	margin-top: 20px;
+	cursor: pointer;
+	align-self: center;
+}
+
+#msg {
+	color: black;
+}
+
+/* ======================================== Footer ======================================== */
+
+footer {
+	width: 100%;
+	text-align: center;
+	padding: 18px 0;
+	font-weight: 300;
+	background: linear-gradient(135deg, #00adb5, #4b0082);
+	color: white;
 }
 
 /* ======================================== Small Screens ======================================== */
@@ -198,6 +476,23 @@ nav .fa-solid {
 	nav .fa-solid {
 		display: block;
 		font-size: 25px;
+	}
+
+	.home-container {
+		flex-direction: column;
+	}
+
+	.services-list {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.service-item {
+		height: fit-content;
+	}
+	.contact-container {
+		display: flex;
+		flex-direction: column;
 	}
 }
 
