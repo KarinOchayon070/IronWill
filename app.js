@@ -138,11 +138,11 @@ function triggerConfetti() {
 
 // ============================================================================================================
 
-document.addEventListener("DOMContentLoaded", function () {
-	var video = document.getElementById("home-video");
+// document.addEventListener("DOMContentLoaded", function () {
+// 	var video = document.getElementById("home-video");
 
-	// Play the video as soon as it's ready
-	video.addEventListener("canplay", function () {
-		video.play();
-	});
-});
+// 	// Play the video as soon as it's ready
+// 	video.addEventListener("canplay", function () {
+// 		video.play();
+// 	});
+// });
