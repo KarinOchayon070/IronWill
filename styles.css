@@ -163,6 +163,7 @@ nav .fa-solid {
 
 .home-main-title {
 	display: inline-block;
+	white-space: nowrap;
 }
 
 .home-text-container {
