@@ -128,31 +128,52 @@ nav .fa-solid {
 /* ======================================== Home ======================================== */
 
 #home {
+	position: relative;
 	width: 100%;
 	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: grey;
+	overflow: hidden;
 }
 
-.home-container {
-	display: flex;
-	align-items: center;
-	padding: 20px;
+.wrapper {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-image: linear-gradient(to bottom, #490b7bbd 0%, #2f2f30 85%);
+}
+.home-page-video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
 }
 
 .home-text-container {
-	white-space: nowrap;
 	direction: rtl;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: white;
+	z-index: 2;
 }
 
 .home-main-title {
 	display: inline-block;
 }
 
+.home-text-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
 .home-text-container h1 {
-	font-size: 80px;
+	font-size: 150px;
 	display: inline;
 }
 
@@ -160,47 +181,58 @@ nav .fa-solid {
 	color: #00adb5;
 }
 
+.home-sub-title,
+.word {
+	direction: rtl;
+	font-size: 70px;
+}
+
+.word-change-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
 .home-change-text-title {
-	font-size: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .home-change-text-title h3 {
 	display: inline-flex;
 	margin: 0;
-	vertical-align: top;
 }
 
-.home-change-text-title h3 .word {
+.home-change-text-title div .word {
 	position: absolute;
 	display: flex;
 	opacity: 0;
 	color: #00adb5;
+	margin-top: 100px;
 }
 
-.home-change-text-title h3 .word .letter {
+.home-change-text-title div .word .letter {
 	transform-origin: center center 22px;
 }
 
-.home-change-text-title h3 .word .letter {
+.home-change-text-title div .word .letter {
 	transform-origin: center center 22px;
 }
 
-.home-change-text-title h3 .word .letter.out {
+.home-change-text-title div .word .letter.out {
 	transform: rotateX(90deg);
 	transition: 0.32s cubic-bezier(0.6, 0, 0.7, 0.2);
 }
 
-.home-change-text-title h3 .word .letter.in {
+.home-change-text-title div .word .letter.in {
 	transition: 0.38s ease;
 }
 
-.home-change-text-title h3 .word .letter.behind {
+.home-change-text-title div .word .letter.behind {
 	transform: rotateX(-90deg);
-}
-
-.Yaron-image {
-	height: 70vh;
-	/* width: 80vw; */
 }
 /* ======================================== About ======================================== */
 
@@ -228,13 +260,13 @@ nav .fa-solid {
 .carousel-wrapper {
 	width: 100%;
 	max-width: 800px;
-	height: 700px;
+	height: 800px;
 	overflow: hidden;
 }
 
 .carousel-inner img {
 	width: 100%;
-	height: 700px;
+	height: 800px;
 	object-fit: cover;
 }
 
@@ -353,7 +385,8 @@ nav .fa-solid {
 	margin-right: 15px;
 }
 
-.contact-yaron-email i:hover, .contact-yaron-phone i:hover{
+.contact-yaron-email i:hover,
+.contact-yaron-phone i:hover {
 	transform: translateY(-5px);
 	transition: transform 0.5s;
 }
@@ -409,14 +442,14 @@ form textarea {
 	margin: 15px 0;
 	font-size: 18px;
 	border-radius: 6px;
-	color: white;
+	color: black;
 	font-size: 18px;
 	direction: rtl;
 }
 
 ::placeholder {
-	color: white;
-	opacity: 0.4;
+	color: black;
+	opacity: 0.7;
 }
 
 .form-button {
@@ -478,10 +511,6 @@ footer {
 		font-size: 25px;
 	}
 
-	.home-container {
-		flex-direction: column;
-	}
-
 	.services-list {
 		display: flex;
 		flex-direction: column;
@@ -499,6 +528,35 @@ footer {
 /* ======================================== Very Small Screens ======================================== */
 
 @media only screen and (max-width: 600px) {
+	.section-title {
+		direction: rtl;
+		font-size: 40px;
+		text-align: center;
+	}
+
+	.about-description {
+		font-size: 16px;
+	}
+
+	.carousel-wrapper,
+	.carousel-inner img {
+		height: 400px;
+	}
+
+	.contact-yaron-email a,
+	.contact-yaron-phone a {
+		font-size: 18px;
+	}
+
+	.home-text-container h1 {
+		font-size: 60px;
+	}
+
+	.home-sub-title,
+	.word {
+		font-size: 30px;
+	}
+
 	nav ul li a {
 		font-size: 18px;
 	}
