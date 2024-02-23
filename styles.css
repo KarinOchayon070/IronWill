@@ -491,6 +491,9 @@ footer {
 		padding-top: 50px;
 		z-index: 9999;
 		transition: right 0.5s;
+		display: flex;
+		justify-content: flex-end;
+		flex-direction: column-reverse;
 	}
 
 	nav ul li {
@@ -509,6 +512,15 @@ footer {
 	nav .fa-solid {
 		display: block;
 		font-size: 25px;
+	}
+
+	.home-text-container h1 {
+		font-size: 100px;
+	}
+
+	.home-sub-title,
+	.word {
+		font-size: 50px;
 	}
 
 	.services-list {
