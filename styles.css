@@ -136,7 +136,7 @@ nav .fa-solid {
 
 .wrapper {
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	position: absolute;
 	background-image: linear-gradient(to bottom, #490b7bbd 0%, #2f2f30 85%);
 }
@@ -145,7 +145,7 @@ nav .fa-solid {
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 100%;
+	height: 100vh;
 	object-fit: cover;
 	z-index: -1;
 }
@@ -442,13 +442,13 @@ form textarea {
 	margin: 15px 0;
 	font-size: 18px;
 	border-radius: 6px;
-	color: black;
+	color: white;
 	font-size: 18px;
 	direction: rtl;
 }
 
 ::placeholder {
-	color: black;
+	color: white;
 	opacity: 0.7;
 }
 
