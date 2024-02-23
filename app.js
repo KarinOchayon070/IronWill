@@ -48,7 +48,7 @@ let changeText = function () {
 	currentWordIndex = currentWordIndex === maxWordIndex ? 0 : currentWordIndex + 1;
 };
 changeText();
-setInterval(changeText, 4000);
+setInterval(changeText, 3000);
 
 // ============================================================================================================
 
